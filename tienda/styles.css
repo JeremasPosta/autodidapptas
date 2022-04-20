@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;1,100;1,300&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100&family=Nunito:wght@300;400&family=Poppins:ital,wght@0,100;0,200;0,300;0,600;1,200&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Home*/
+
+header{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    background-color: #8B72BD;
+    color: white;
+}
+    
+nav ul{
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+}
+    
+nav ul li{
+    list-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+    
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+#hero{
+    width: 100vw;
+    height: 30vh;
+    background-color: #F9EAFF;
+    text-align: center;    
+}
+
+#hero h1{
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    background-color: #8B72BD;
+}
+
+/*@media*/
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    
+}
