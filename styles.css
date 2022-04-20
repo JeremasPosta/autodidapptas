@@ -1,25 +1,55 @@
-:root{
-    --bg-color:rgb(240,240,240);
-    --second-bg-color:rgb(171,231,253);
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;1,100;1,300&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100&family=Nunito:wght@300;400&family=Poppins:ital,wght@0,100;0,200;0,300;0,600;1,200&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    background-color: var(--bg-color);
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    font-family: monospace;
-    color: white;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%231e3266'%3e%3c/rect%3e%3cpath d='M1512 560L0 560 L0 281.8Q77.46 287.26%2c 72 364.72Q137.48 310.2%2c 192 375.67Q211.69 323.36%2c 264 343.04Q296.39 255.44%2c 384 287.83Q464.53 248.36%2c 504 328.89Q560.92 313.81%2c 576 370.74Q597.6 320.34%2c 648 341.94Q663.86 285.8%2c 720 301.66Q749.88 259.55%2c 792 289.43Q848.83 274.25%2c 864 331.08Q906.26 301.35%2c 936 343.61Q980.43 268.04%2c 1056 312.47Q1098.14 282.61%2c 1128 324.75Q1196.13 272.88%2c 1248 341Q1290.3 311.29%2c 1320 353.59Q1362.48 276.07%2c 1440 318.55Q1469.97 276.52%2c 1512 306.5z' fill='%23182f5d'%3e%3c/path%3e%3cpath d='M1488 560L0 560 L0 447.92Q-2.71 373.21%2c 72 370.49Q146.2 372.69%2c 144 446.9Q169.49 352.39%2c 264 377.88Q340.14 334.02%2c 384 410.16Q454.2 360.37%2c 504 430.57Q548.3 402.87%2c 576 447.16Q585.33 384.49%2c 648 393.82Q714 339.81%2c 768 405.81Q802.04 319.86%2c 888 353.9Q940.88 334.77%2c 960 387.65Q1015.05 370.7%2c 1032 425.76Q1037.69 359.45%2c 1104 365.14Q1171.72 312.86%2c 1224 380.57Q1278.76 363.33%2c 1296 418.09Q1329.16 331.25%2c 1416 364.41Q1469.05 345.46%2c 1488 398.5z' fill='%2325467d'%3e%3c/path%3e%3cpath d='M1488 560L0 560 L0 431.74Q37.94 397.68%2c 72 435.62Q167.31 410.93%2c 192 506.24Q246.77 441.01%2c 312 495.78Q350.34 414.12%2c 432 452.46Q485.32 385.78%2c 552 439.11Q609.31 424.43%2c 624 481.74Q675.2 460.94%2c 696 512.14Q708.57 452.71%2c 768 465.28Q793.7 418.98%2c 840 444.68Q870.92 403.61%2c 912 434.53Q982.71 385.24%2c 1032 455.94Q1052.07 404.01%2c 1104 424.08Q1187.39 387.48%2c 1224 470.87Q1279.74 454.61%2c 1296 510.34Q1300.29 442.63%2c 1368 446.92Q1419.87 378.79%2c 1488 430.66z' fill='%23356cb1'%3e%3c/path%3e%3cpath d='M1464 560L0 560 L0 536.89Q61.19 526.08%2c 72 587.27Q73.07 516.34%2c 144 517.41Q198.45 451.86%2c 264 506.3Q359.2 481.5%2c 384 576.7Q390.01 510.71%2c 456 516.72Q508.36 449.08%2c 576 501.44Q630.56 484%2c 648 538.56Q697.05 467.61%2c 768 516.66Q856.82 485.48%2c 888 574.31Q931.04 497.35%2c 1008 540.38Q1057.63 470.01%2c 1128 519.64Q1204.22 475.86%2c 1248 552.07Q1296.74 528.81%2c 1320 577.55Q1350.77 536.32%2c 1392 567.08Q1400.44 503.52%2c 1464 511.96z' fill='white'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
+header{
     display: flex;
+    width: 100%;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    font-family: "Roboto", sans-serif;
+    background-color: #8B72BD;
+    color: white;
+}
+    
+nav ul{
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+}
+    
+nav ul li{
+    list-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+    
+nav ul li a{
+    text-decoration: none;
+    color: white;
 }
 
-h1{
-    font-size: calc(1em + 1vw);
+#hero{
+    width: 100vw;
+    height: 30vh;
+    background-color: #F9EAFF;
+    text-align: center;    
+}
+
+#hero h1{
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    background-color: #8B72BD;
 }
