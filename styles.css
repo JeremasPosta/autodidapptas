@@ -18,8 +18,13 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
+    flex-direction: column;
 }
 
 h1{
     font-size: calc(1em + 1vw);
+}
+
+.container{
+    height: 300px;
 }
